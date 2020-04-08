@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.container {
+			width: 940px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.grid {
+			display: grid;
+			height: 360px;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 2.5fr 1.5fr 0.5fr;
+			grid-column-gap: 12px;
+			grid-row-gap: 6px;
+		}
+
+		.grid__el {
+			background-color: lightgreen;
+			padding: 16px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="grid">
+			<div class="grid__el">1</div>
+			<div class="grid__el">2</div>
+			<div class="grid__el">3</div>
+			<div class="grid__el">4</div>
+			<div class="grid__el">5</div>
+			<div class="grid__el">6</div>
+			<div class="grid__el">6</div>
+			<div class="grid__el">6</div>
+			<div class="grid__el">6</div>
+		</div>
+	</div>
+
+	<script src="/js/bundle.js"></script>
+</body>
+
+</html>
